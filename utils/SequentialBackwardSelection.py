@@ -22,6 +22,7 @@ class SequentialBackwardSelection():
         self.indices_ = tuple(range(dim))
         self.subsets_ = [self.indices_]
         score = self._calc_score(X_train, y_train, X_test, y_test, self.indices_)
+        self.scores_ = [score]
         
         while dim > self.k_features:
             scores = []
@@ -36,7 +37,7 @@ class SequentialBackwardSelection():
             self.indices_ = subsets[best]
             self.subsets_.append(self.indices_)
             dim -= 1
-
+            
             self.scores_.append(scores[best])
 
         self.k_score_ = self.scores_[-1]
