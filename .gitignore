@@ -1,1 +1,3 @@
 .vscode
+datasets/aclImdb
+datasets/aclImdb_sentiment_dataset.csv
