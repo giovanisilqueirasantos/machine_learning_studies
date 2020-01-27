@@ -12,6 +12,7 @@ pandas = "*"
 scipy = "*"
 matplotlib = "*"
 nltk = "*"
+seaborn = "*"
 
 [requires]
 python_version = "3.7"
