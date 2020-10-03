@@ -9,7 +9,6 @@ verify_ssl = true
 gym = "*"
 numpy = "*"
 matplotlib = "*"
-mpl-toolkits = "*"
 
 [requires]
 python_version = "3.7"
